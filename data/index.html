@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com -->
+<!--  Last Published: Mon Apr 03 2017 13:49:19 GMT+0000 (UTC)  -->
+<html data-wf-page="5640ea2ff886216b031b7ac6" data-wf-site="5640ea2ff886216b031b7ac5">
+<head>
+  <meta charset="utf-8">
+  <title>Otimitek</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/otimitek.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Roboto:100,300,regular,700"]
+      }
+    });
+  </script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body w-clearfix">
+  <header class="header">
+    <div class="navbar w-nav" data-animation="over-right" data-collapse="medium" data-duration="400">
+      <a class="brand w-nav-brand" href="#"></a>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+      <nav class="nav-menu w-nav-menu" role="navigation">
+        <div class="w-dropdown" data-delay="0">
+          <div class="drop-link w-dropdown-toggle">
+            <div>Empresa</div>
+            <div class="w-icon-dropdown-toggle"></div>
+          </div>
+          <nav class="drop-open w-dropdown-list">
+            <a class="dropdown-link w-dropdown-link" href="servicos.html">Serviços</a>
+            <a class="dropdown-link w-dropdown-link" href="seguranca-do-trabalho.html">Segurança do trabalho</a>
+            <a class="dropdown-link w-dropdown-link" href="#sobre">Sobre a empresa</a>
+            <a class="dropdown-link w-dropdown-link" href="#trabalhe">Trabalhe conosco</a>
+            <a class="dropdown-link w-dropdown-link" href="#clientes">Nossos Clientes</a>
+          </nav>
+        </div>
+        <div class="w-dropdown" data-delay="0">
+          <div class="drop-link w-dropdown-toggle">
+            <div>Fale conosco</div>
+            <div class="w-icon-dropdown-toggle"></div>
+          </div>
+          <nav class="drop-open w-dropdown-list">
+            <a class="dropdown-link w-dropdown-link" href="https://wa.me/5522999842500?text=Olá!%20Preciso%20dos%20serviços%20da%20Otimitek." target="_blank">Fale pelo WhatsApp</a>
+            <a class="dropdown-link w-dropdown-link" data-ix="modal-2" href="#">Avaliação de serviço</a>
+            <a class="dropdown-link w-dropdown-link" href="https://www.google.com.br/maps/place/OTIMITEK+ENGENHARIA/@-21.7637791,-41.3147042,14z/data=!4m5!1m2!2m1!1sRua+Virgulino+Ferreira+Lampi%C3%A3o,+n%C2%BA+21.+Pq.+Jockey+II!3m1!1s0x0000000000000000:0x84ecaaad158d30d0" target="_blank">Onde estamos</a>
+          </nav>
+        </div>
+        <a class="button top-right w-button" href="https://wa.me/5522999842500?text=Olá!%20Preciso%20dos%20serviços%20da%20Otimitek." target="_blank">Faça seu orçamento</a>
+        <a class="button top-right w-button" data-ix="modal-3" href="#">SIGIP</a>
+      </nav>
+    </div>
+  </header>
+  <section class="section-modal">
+    <div class="form-chamado">
+      <div class="w-form">
+        <form class="w-clearfix" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="box-form">
+            <h2>abertura de chamado</h2>
+            <p>Preencha os dados e conte-nos como podemos te ajudar.</p>
+            <label for="Nome">Nome:</label>
+            <input class="w-input" data-name="Nome" id="Nome" maxlength="256" name="Nome" placeholder="*" required="required" type="text">
+            <label for="email-2">E-mail:</label>
+            <input class="w-input" data-name="Email 2" id="email-2" maxlength="256" name="email" placeholder="*" required="required" type="email">
+          </div>
+          <div class="w-row">
+            <div class="w-col w-col-6">
+              <label for="Telefone">Telefone:</label>
+              <input class="w-input" data-name="Telefone" id="Telefone" maxlength="256" name="Telefone" placeholder="*" required="required" type="text">
+            </div>
+            <div class="w-col w-col-6">
+              <label for="CEP">CEP:</label>
+              <input class="w-input" data-name="CEP" id="CEP" maxlength="256" name="CEP" type="text">
+            </div>
+          </div>
+          <div class="box-form">
+            <label for="Mensagem-2">Mensagem</label>
+            <textarea class="w-input" data-name="Mensagem" id="Mensagem-2" maxlength="5000" name="Mensagem" placeholder="*" required="required"></textarea>
+          </div>
+          <input class="button button-form w-button" data-wait="Enviando..." type="submit" value="ENVIAR" wait="Enviando...">
+        </form>
+        <div class="sucess w-form-done">
+          <p class="p-sucess">Obrigado. Sua mensagem foi enviada com sucesso!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Tente novamente.</p>
+        </div>
+      </div>
+    </div>
+    <a class="close w-inline-block" data-ix="close" href="#"></a>
+  </section>
+  <section class="section-modal-login">
+    <div class="form-chamado sgm">
+      <div class="w-form">
+        <form class="w-clearfix" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="box-form">
+            <h2>SIGIP</h2>
+            <p>Informe os dados de acesso</p>
+            <label for="Nome-3">Login:</label>
+            <input class="w-input" data-name="Nome 3" id="Nome-3" maxlength="256" name="Nome-3" placeholder="*" required="required" type="text">
+            <label for="email-2">Senha:</label>
+            <input class="w-input" data-name="Email 2" id="email-2" maxlength="256" name="email" placeholder="*" required="required" type="email">
+          </div>
+          <input class="button button-form w-button" data-wait="Enviando..." type="submit" value="ENVIAR" wait="Enviando...">
+        </form>
+        <div class="sucess w-form-done">
+          <p class="p-sucess">Obrigado. Sua mensagem foi enviada com sucesso!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Tente novamente.</p>
+        </div>
+      </div>
+    </div>
+    <a class="close w-inline-block" data-ix="close-3" href="#"></a>
+  </section>
+  <section class="section-modal-clientes">
+    <div class="_2 form-chamado">
+      <div class="w-form">
+        <form class="w-clearfix" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="box-form">
+            <h2>avalie nosso serviço</h2>
+            <p>Sabemos que para alcançar a satisfação de nossos clientes, é necessário adaptação contínua. Nos ajude a ser melhor para você.</p>
+            <label for="Nome-2">Nome:</label>
+            <input class="w-input" data-name="Nome 2" id="Nome-2" maxlength="256" name="Nome-2" placeholder="*" required="required" type="text">
+            <label for="email-2">E-mail:</label>
+            <input class="w-input" data-name="Email 2" id="email-2" maxlength="256" name="email" placeholder="*" required="required" type="email">
+          </div>
+          <div class="w-row">
+            <div class="w-col w-col-6">
+              <label for="Telefone-2">Telefone:</label>
+              <input class="w-input" data-name="Telefone 2" id="Telefone-2" maxlength="256" name="Telefone-2" placeholder="*" required="required" type="text">
+            </div>
+            <div class="w-col w-col-6">
+              <label for="Empresa">Empresa:</label>
+              <input class="w-input" data-name="Empresa" id="Empresa" maxlength="256" name="Empresa" placeholder="*" required="required" type="text">
+            </div>
+          </div>
+          <div class="box-form">
+            <label for="Mensagem">Mensagem:</label>
+            <textarea class="w-input" data-name="Mensagem" id="Mensagem" maxlength="5000" name="Mensagem" placeholder="* Conte sua experiência com nossa empresa" required="required"></textarea>
+          </div>
+          <input class="button button-form w-button" data-wait="Enviando..." type="submit" value="ENVIAR" wait="Enviando...">
+        </form>
+        <div class="sucess w-form-done">
+          <p class="p-sucess">Obrigado. Sua mensagem foi enviada com sucesso!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Tente novamente.</p>
+        </div>
+      </div>
+    </div>
+    <a class="close w-inline-block" data-ix="close-2" href="#"></a>
+  </section>
+  <section class="banner section">
+    <div class="slider w-slider" data-animation="over" data-autoplay="1" data-delay="5000" data-duration="800" data-infinite="1">
+      <div class="w-slider-mask">
+        <div class="slide-1 w-slide"></div>
+        <div class="slide-2 w-slide"></div>
+        <div class="slide-3 w-slide"></div>
+        <div class="slide-4 w-slide"></div>
+      </div>
+      <div class="arrow left w-slider-arrow-left">
+        <div class="arrow icon w-icon-slider-left"></div>
+      </div>
+      <div class="arrow right w-slider-arrow-right">
+        <div class="arrow icon w-icon-slider-right"></div>
+      </div>
+    </div>
+    <div class="sec-servicos" id="servicos">
+      <div class="w-row">
+        <div class="column w-col w-col-6 w-col-stack white">
+          <div class="content-left">
+            <h2>serviços <span class="span-h2-light">oferecidos</span></h2>
+            <p>Os serviços oferecidos obedecem às normas de preservação ambiental. Atuamos em projetos de diversas categorias de engenharia, como edificações, estradas, redes de água e esgoto, obras de arte, instalações elétricas, manutenção de áreas verdes e degradadas, além de locação de máquinas e equipamentos e produção de festas temáticas que transformam espaços e encantam pessoas.</p>
+            <p>Fale conosco: 0800 022 2626</p><a class="button w-button" href="servicos.html">saiba mais</a>
+          </div>
+        </div>
+        <a href="https://wa.me/5522999842500?text=Olá!%20Preciso%20dos%20serviços%20da%20Otimitek." class="whatsapp-button" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91c0-2.73-1.11-5.2-2.95-7.01zm-7.01 15.26c-1.54 0-3.04-.39-4.38-1.15l-.31-.18l-3.26.85l.87-3.18l-.2-.33c-.84-1.38-1.28-2.97-1.28-4.63c0-4.54 3.69-8.23 8.24-8.23c2.23 0 4.33.87 5.84 2.42c1.54 1.54 2.39 3.6 2.39 5.83c.02 4.54-3.67 8.23-8.22 8.23zm4.43-6.85c-.24-.12-1.45-.72-1.68-.8c-.23-.08-.39-.12-.56.12c-.17.24-.63.8-.78.96c-.15.16-.3.18-.56.06c-.26-.12-1.1-.41-2.09-1.29c-.77-.69-1.29-1.54-1.44-1.8c-.15-.26-.02-.4.1-.52c.11-.11.24-.28.37-.42c.12-.14.16-.24.24-.4c.08-.16.04-.3-.02-.42c-.06-.12-.56-1.34-.76-1.84c-.2-.48-.4-.42-.55-.42h-.47c-.17 0-.43.06-.66.3c-.23.24-.87.85-.87 2.07c0 1.22.89 2.4 1.01 2.56c.12.16 1.76 2.68 4.27 3.77c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.45-.59 1.65-1.16c.2-.57.2-1.06.14-1.18c-.06-.12-.22-.18-.46-.3z"></path>
+        </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="sobre">
+    <div class="w-row">
+      <div class="column maps w-col w-col-6 w-col-stack"></div>
+      <div class="column w-col w-col-6 w-col-stack">
+        <div class="grafismo"></div>
+        <div class="content-right sobre">
+          <h2>Sobre <span class="span-h2-light">a empresa</span></h2>
+          <p class="paragraph">A Otimitek Engenharia oferece soluções completas e atualizadas em engenharia elétrica, civil e preservação ambiental, reunindo uma equipe altamente especializada e com mais de 20 anos de experiência no mercado.
+          Nossos serviços seguem rigorosos padrões de qualidade, sempre alinhados às especificações contratuais, segurança em campo e sustentabilidade ambiental. Nossos veículos operacionais são equipados com oficinas volantes, garantindo agilidade, eficiência e atendimento técnico imediato em qualquer situação.</p>
+          <p class="paragraph">Com o passar dos anos, ampliamos nossa atuação, agregando novas frentes de negócios que refletem o mesmo compromisso com excelência: o aluguel de máquinas e equipamentos, assegurando que obras e projetos nunca parem  e a produção de festas temáticas sazonais, responsáveis por transformar espaços, iluminar cidades e criar experiências inesquecíveis.
+          A Otimitek é movida por uma gestão ética, transparente e socialmente responsável, que investe continuamente no aprimoramento de seus colaboradores e na satisfação plena de seus clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-work" id="trabalhe">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="col-left w-col w-col-4">
+          <h2>Missão</h2>
+          <p class="paragraph">Oferecer produtos e serviços de elevada qualidade técnica, visando ao atendimento total às especificações e necessidades de nossos clientes.</p>
+        </div>
+        <div class="col-right none w-col w-col-4">
+          <h2>visão</h2>
+          <p class="paragraph">Ser referência na região sudeste pela excelência em engenharia, locação de máquinas e equipamentos e criação de experiências temáticas, unindo tecnologia, criatividade e sustentabilidade para transformar espaços e resultados.</p>
+        </div>
+        <div class="w-col w-col-4">
+          <h2>valores</h2>
+          <p class="paragraph">Satisfação de nossos clientes, esforços contínuos dos nossos colaboradores, visando ao atendimento das especificações e necessidade de nosso clientes.<strong><br></strong>
+          </p>
+        </div>
+      </div>
+      <div class="video w-embed w-video" style="padding-top: 56.17021276595745%;">
+        <iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKx3YvH2zYSc&src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FKx3YvH2zYSc%3Ffeature%3Doembed%26rel%3D0&type=text%2Fhtml&key=c4e54deccf4d4ec997a64902e9a30300&schema=youtube" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </section>
+  <section class="info section-work" id="trabalhe">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="col-left w-col w-col-6">
+          <h2>Trabalhe <span class="span-h2-light">conosco</span></h2>
+          <p class="paragraph">Se você acredita que tirar projetos do papel é construir qualidade de vida e deseja contribuir com o desenvolvimento de novas soluções em engenharia elétrica, civil, locação de máquinas e equipamentos e festas temáticas sazonais, a Otimitek está em busca de novos talentos como você.
+          <br><br>A competência da nossa equipe é o que edifica e impulsiona nossos resultados.
+          Envie seu currículo e tenha a oportunidade de crescer com uma empresa que transforma obras, eventos e experiências em grandes conquistas.</p>
+          <p class="p-bold">rh@otimitek.com.br</p>
+        </div>
+        <div class="col-right none w-col w-col-6">
+          <h2>seja nosso<span class="span-h2-light">fornecedor</span></h2>
+          <p class="paragraph">A Otimitek sabe que, trabalhar com fornecedores competentes é a premissa para o sucesso e satisfação do cliente final. Se a sua empresa tem interesse em ser nossa parceira entre em contato.</p>
+          <p class="p-bold">compras@otimitek.com.br</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-clients" id="clientes">
+    <div class="content-clients w-container">
+      <div class="box-h2-clients">
+        <h2>alguns de<span class="span-h2-light">nossos clientes</span></h2>
+      </div>
+      <div class="clientes">
+        <div class="logo-cliente"><img class="img-logo" src="images/angra.png">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/barra-mansa.png" width="145">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/prefeitura-de-campos.png" width="126">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/cantagalo.png">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/prefeituradecasimiro.png" width="132">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" height="90" src="images/der-rj.png" width="80">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/faetec.png" width="112">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/furnas.png" width="132">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/url.png" width="81">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/paraty.png"><img class="img-logo" src="images/paraty.png"><img class="img-logo" src="images/defesa.png" width="132">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/paraty.png"><img class="img-logo" src="images/paraty.png"><img class="img-logo" src="images/paraty.png">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/rio-luz.png" width="76">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/governo-do-rj.png" width="120">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/sao-joao-da-barra.png">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/uenf.png" width="142"><img class="img-logo" src="images/uenf.png" width="142"><img class="img-logo" src="images/telebras.png" width="132">
+        </div>
+        <div class="logo-cliente"><img class="img-logo" src="images/uenf.png" width="142"><img class="img-logo" src="images/uenf.png" width="142"><img class="img-logo" src="images/uenf.png" width="142">
+        </div>
+      </div><a class="button clientes w-button" data-ix="modal-2" href="#">Avalie nosso serviço</a>
+    </div>
+  </section>
+  <footer class="footer" id="contato">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <h2>e-mails</h2>
+          <div class="list-emails">
+            <div class="txt-email">areatecnica@otimitek.com.br</div>
+            <div class="txt-email">compras@otimitek.com.br</div>
+            <div class="txt-email">comercial@otimitek.com.br</div>
+            <div class="txt-email">contratos@otimitek.com.br</div>
+            <div class="txt-email">financeiro@otimitek.com.br</div>
+            <div class="txt-email">rh@otimitek.com.br</div>
+          </div>
+        </div>
+        <div class="w-col w-col-6">
+          <h2>informações</h2>
+          <div class="txt-phone">(22) 2725-4700</div>
+          <div class="txt-phone">0800 022 2626</div>
+          <div class="txt-endereco">Endereço: Rua Virgulino Ferreira Lampião, nº 21. Jockey II Campos dos Goytacazes - RJ | Cep - 28020 307</div>
+          <div class="certificado"><img src="images/certificacao-conformidade-profissional.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="color-footer"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
+
