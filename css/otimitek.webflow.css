@@ -1227,90 +1227,75 @@ ul {
     height: auto;
   }
 }
-
-/* ========================================= */
-/* NOVO CSS PARA LISTAS DE CONTATO           */
-/* ========================================= */
-
-/* Define o estilo dos títulos das colunas
-   (E-MAILS, INFORMAÇÕES)
-*/
-.footer h2 {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 24px;      /* Tamanho do título */
-  font-weight: 600;     /* Um pouco mais "grosso" */
-  color: #000a42;        /* Um preto mais suave */
-  margin-bottom: 20px;  /* Espaço abaixo do título */
-  text-transform: uppercase; /* Deixa em maiúsculas */
-  letter-spacing: 1px;     /* Espaçamento entre letras */
-}
-
-/* Organiza as listas de e-mails e telefones
-   (Estes são os divs "contato list")
-*/
-.footer .list-emails,
-.footer .list-phone {
-  margin-bottom: 20px; /* Dá um espaço antes do endereço */
-}
-
-/* Estiliza os itens de contato individuais
-   (Estes são os "contatos")
-*/
-.footer .txt-email,
-.footer .txt-phone {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;     /* Tamanho do texto */
-  color: #020314;       /* Cor do texto (cinza escuro) */
-  line-height: 1.6;    /* Altura da linha, para mais respiro */
-  font-weight: 400;
-  margin-bottom: 8px; /* Espaço entre cada item */
-}
-
-/* Estiliza o endereço */
-.footer .txt-endereco {
-  font-size: 16px;
-  color: #3d3d3d;      /* Um cinza um pouco mais claro */
-  line-height: 1.6;
-  margin-top: 20px;
-}
-
-/* Garante que a imagem do certificado não "grude" */
-.footer .certificado {
-  margin-top: 25px;
-}
-/* ========================================= */
-/* SOLUÇÃO DEFINITIVA SAFARI (PROBLEMA DE FONTE) */
-/* ========================================= */
-
-/* Força o Safari a usar uma fonte de sistema
-  segura (Arial) que com certeza tem números.
-  Esta é a regra mais importante.
-*/
-#contato .txt-phone {
+.novo-footer,
+.novo-footer h2,
+.novo-footer div,
+.novo-footer a,
+.novo-footer img {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-
-  /* Mantém as outras correções por segurança */
-  color: #020314!important;
+  color: #000000 !important;
   opacity: 1 !important;
   visibility: visible !important;
-  
-  /* Reseta outras propriedades de fonte que podem dar problema */
   -webkit-text-security: none !important;
   font-variant: normal !important;
   text-transform: none !important;
+  background: none;
 }
-
-/* Aplica a mesma lógica para o Endereço e o Título */
-#contato .txt-endereco {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-  color: #020314 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+.novo-footer {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
 }
-
-#contato h2 {
+.novo-footer-container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.footer-coluna h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #010049 !important;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contato-item a {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-  color: #020314 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  color: #000000 !important;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+.contato-item a:hover {
+  text-decoration: underline;
+  text-decoration: none;
+}
+.contato-endereco {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  font-size: 16px;
+  color: #555555 !important;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+.contato-certificado {
+  margin-top: 25px;
+}
+.contato-certificado img {
+  max-width: 50%;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
