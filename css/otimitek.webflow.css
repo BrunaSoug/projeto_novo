@@ -1262,11 +1262,9 @@ ul {
   color: #010049 !important;
   margin-top: 0;
   margin-bottom: 20px;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 .contato-item a {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
   color: #000000 !important;
   font-size: 18px;
   font-weight: 400;
